@@ -4,7 +4,6 @@
     padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1600px;
     background-color: var(--footer-back-color);
     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-repeat: no-repeat;
@@ -69,8 +68,10 @@
     margin-right: 30px;
 }
 .icon-features {
+    display: flex;
     height: 120px;
-    padding: 25px 100px;
+    justify-content: center;
+    align-items: center;    
     margin-bottom: 30px;
     background-color: var(--gray-back-color);    
 }
@@ -113,7 +114,6 @@ li p {
     padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1600px;
 }
 .workers {
     display: flex;
@@ -158,10 +158,11 @@ border-radius: 0px 0px 4px 4px;
     justify-content: space-around;
 }
 .social-item {
-    display: block;
+    display: flex;
     width: 44px;
     height: 44px;
-    padding: 12px;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
 }
 .social-links .social-item + .social-item {
@@ -239,7 +240,10 @@ border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-white-color);
     width: calc((100% - 60px) / 3);
 }
-.work-item:hover, .work-item:focus {
+.work-link {
+    display: block;
+}
+.work-link:hover, .work-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }

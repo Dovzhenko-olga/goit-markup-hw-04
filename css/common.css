@@ -162,6 +162,7 @@ body {
 }
 .join {
     display: block;
+    margin-top: 0;
     margin-bottom: 20px;
     color: var(--primary-white-color);
     font-family: Roboto;
